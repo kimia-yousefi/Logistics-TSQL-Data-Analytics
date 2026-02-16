@@ -24,6 +24,7 @@ ELSE
 BEGIN
     IF @@ROWCOUNT = 0
     BEGIN
+    PRINT "order not found"
     ROLLBACK TRAN changestatus
     END
     ELSE
